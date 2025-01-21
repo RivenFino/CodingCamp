@@ -1,0 +1,477 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ceedf7af;
+    background-image: url('../images/paper-texture2.jpg');
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-size: 19%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #604f41;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2,
+h3 {
+    color: #604f41;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #73889b;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 48;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.image-profile {
+    width: 350px;
+    height: auto;
+}
+
+.profile {
+    background-color: #f7f7f7;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 21.5/9;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.profile section {
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+}
+
+.jumbotron {
+    min-height: 92vh;
+    font-size: 24px;
+    padding: 4rem;
+    background: url('../images/paper-texture2.jpg');
+    object-position: center;
+    text-align: center;
+    color: #604f41;
+    background-repeat: repeat;
+    background-size: 30%;
+}
+
+.jumbotron h1 {
+    color: #604f41;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    min-height: 5vh;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: #73889b;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem 3rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+table tr th {
+    text-align: start;
+    padding: 0 1rem;
+}
+
+aside table tr td {
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+aside table tr td li {
+    text-align: start;
+}
+
+.genre-list {
+    text-decoration: none;
+}
+
+
+/*Album CSS Section */
+.album-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 3.5rem;
+}
+
+.album-item {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    padding: 32px 16px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.album-item aside {
+    font-size: 18px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.track-list {
+    width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.track-list thead tr th {
+    background-color: #604f41;
+    color: #f7f7f7;
+    padding: 12px 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.track-list tbody td {
+    padding: 6px 20px;
+    border-bottom: 1px solid #604f41;
+}
+
+.track-link {
+    text-align: center;
+}
+
+.album-sections aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.album-sections aside section {
+    width: 100%;
+}
+
+.album-sections aside table {
+    border-collapse: collapse;
+    border-top: #604f41 solid 1px;
+    width: 100%;
+}
+
+.album-sections aside table tr th {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.album-sections aside table tr td {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2.5rem;
+    justify-content: start;
+    text-transform: capitalize;
+    background-color: #73889b18;
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    margin-bottom: 2.45rem;
+}
+
+.album-cover {
+    display: flex;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #73889b3d;
+    width: auto;
+    height: auto;
+}
+
+.album-nav {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 12px 0px;
+}
+
+.album-list-item {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 4px 6px;
+}
+
+.cover-size {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.track-link img {
+    width: 30px;
+    height: auto;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column-reverse nowrap;
+        padding: 24px;
+    }
+
+    main aside {
+        align-self: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1.75rem;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+    main aside table {
+        width: 100%;
+    }
+    main aside table th{
+        width: 70%;
+    }
+    main aside table td{
+        font-size: 18px;
+    }
+
+    main aside section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jumbotron {
+        min-height: 92vh;
+        font-size: 24px;
+        padding: 2rem;
+    }
+
+    .image-profile {
+        width: 280px;
+    }
+
+    .cover-size {
+        width: 150px;
+        height: 150px;
+    }
+
+    .album-list-item {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        gap: 4px;
+        padding: 8px 4px;
+    }
+
+    .album-item {
+        display: flex;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        gap: 2rem;
+        padding: 12px 4px;
+        border-radius: 8px;
+    }
+    
+    .album-item aside table {
+        width: 100%;
+    }
+
+    .album-item aside table tr th{
+        width: 70%;
+        text-align: start;
+    }
+
+    .album-item aside table tr td{
+        font-size: 18px;
+        text-align: start;
+    }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 16px;
+        margin-bottom: 64px;
+    }
+
+    nav {
+        padding: 0;
+        height: 6vh;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    main aside table td{
+        font-size: 16px;
+    }
+
+    .image-profile {
+        width: 250px;
+        height: auto;
+    }
+
+    .card {
+        border-radius: 12px;
+        padding: 1.2rem;
+    }
+
+    .jumbotron {
+        min-height: 94vh;
+        font-size: 18px;
+        padding: 1.5rem;
+    }
+
+    .figure-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: full;
+    }
+
+    .album-item {
+        display: flex;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .album-list {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cover-size {
+        width: 100px;
+        height: 100px;
+    }
+
+    .track-list thead tr th {
+        font-size: 11px;
+        padding: 4px 12px;
+    }
+
+    .track-list tbody tr td {
+        font-size: 12px;
+        padding: 2px 4px;
+    }
+
+    .track-list tbody tr td {
+        text-overflow: clip;
+    }
+
+    .track-link img {
+        width: 20px;
+        height: auto;
+    }
+}
