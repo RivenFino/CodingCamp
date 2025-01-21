@@ -28,3 +28,4 @@ menuItems.forEach((item) => {
         }
     });
 });
+
