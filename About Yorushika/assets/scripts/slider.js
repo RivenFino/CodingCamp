@@ -20,7 +20,7 @@ function initSlider() {
         slides[currentSlide].classList.add('active');
     }
 
-    // Touch Events
+    // Mobile swipe
     slider.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].clientX;
     });
@@ -33,7 +33,7 @@ function initSlider() {
     function handleSwipe() {
         const swipeDistance = touchEndX - touchStartX;
 
-        if (Math.abs(swipeDistance) > 50) { // Minimum swipe distance
+        if (Math.abs(swipeDistance) > 50) { 
             if (swipeDistance > 0) {
                 previousSlide();
             } else {
