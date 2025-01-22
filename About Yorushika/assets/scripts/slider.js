@@ -62,7 +62,6 @@ function initSlider() {
         clearInterval(slideInterval);
     });
 
-    // Resume auto-sliding after touch
     slider.addEventListener('touchend', () => {
         slideInterval = setInterval(nextSlide, 5000);
     });
