@@ -1,0 +1,76 @@
+.flex{
+    display: flex;
+}
+
+.inline {
+    display: inline;
+}
+
+/* Mengatur warna background */
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+
+.h-auto {
+    height: auto;
+}
+.w-auto {
+    width: auto;
+}
+
+/* Menentukan tinggi dan maksimalnya element */
+
+.h-850 {
+    height: 850px;
+    max-height: 850px;
+}
+
+.h-700 {
+    height: 700px;
+    max-height: 700px;
+}
+
+.h-400 {
+    height: 400px;
+    max-height: 400px;
+}
+
+.h-550 {
+    height: 550px;
+    max-height: 550px;
+}
+
+.list-none
+{
+    list-style: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-start{
+    text-align: start;
+}
+
+.text-end{
+    text-align: end;
+}
+
+
+/*  Menentukan posisi gambar yang di crop */
+
+.object-center {
+    object-position: center;
+}
+.object-top {
+    object-position: top;
+}
+.object-bottom {
+    object-position: bottom;
+}
